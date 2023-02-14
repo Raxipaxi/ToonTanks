@@ -30,11 +30,11 @@ public:
 	APlayerController* GetPlayerController() const {return PlayerControllerPtr;}
 private:
 
-	UPROPERTY(EditInstanceOnly,BlueprintReadOnly, Category="Camera", meta = (AllowPrivateAccess="true"))
-	class USpringArmComponent* SpringArm;
-
-	UPROPERTY(EditInstanceOnly,BlueprintReadOnly, Category="Camera", meta = (AllowPrivateAccess="true"))
-	class UCameraComponent* Camera;
+	// UPROPERTY(EditInstanceOnly,BlueprintReadWrite, Category="Camera", meta = (AllowPrivateAccess="true"))
+	// class USpringArmComponent* SpringArm;
+	//
+	// UPROPERTY(EditInstanceOnly,BlueprintReadWrite, Category="Camera", meta = (AllowPrivateAccess="true"))
+	// class UCameraComponent* Camera;
 
 	UPROPERTY(EditInstanceOnly,BlueprintReadWrite, Category="Stats", meta = (AllowPrivateAccess="true"))
 	float Speed = 200.f;
@@ -47,8 +47,4 @@ private:
 	void Turn(float Value);
 
 	APlayerController* PlayerControllerPtr;
-
-	
-
-	
 };

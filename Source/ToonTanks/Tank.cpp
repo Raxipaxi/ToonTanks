@@ -16,11 +16,11 @@ void ATank::BeginPlay()
 
 ATank::ATank()
 {
-	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("Sprin Arm"));
-	SpringArm->SetupAttachment(RootComponent);
-	
-	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
-	Camera->SetupAttachment(SpringArm);
+	// SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("Sprin Arm"));
+	// SpringArm->SetupAttachment(RootComponent);
+	//
+	// Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
+	// Camera->SetupAttachment(SpringArm);
 	
 }
 // Called every frame
